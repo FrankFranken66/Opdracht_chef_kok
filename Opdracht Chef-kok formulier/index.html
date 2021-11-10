@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Chef-kok favo recepten</title>
+    </head>
+    <body>
+        <form name="Recepten" method="POST" data-netlify="true">
+            <p><label>Naam: </label><input type="text" name="naam"/></p>
+            <p><label>e-mail: </label><input type="email" name="e-mail"/></p>
+            <p><label>Telefoonnummer: </label><input type="number" name="tel."/></p>
+            <p><label>Leeftijd: </label><input type="number" name="leeftijd"/></p>
+            <p><label>Gebootedatum: </label><input type="date" name="tel."/></p>
+            
+            <p><i>Geslacht:</i></p>
+                <p><input type="radio" name="Geslacht" value="man">Man</p>
+                <p><input type="radio" name="Geslacht" value="vrouw">Vrouw</p>
+
+            <p><label>Favourite keuken: <select name="keuken[]" multiple>
+                <option value="Frans">Frans</option>
+                <option value="Italiaans">Italiaans</option>
+                <option value="Spaans">Spaans</option>
+                <option value="Arabisch">Arabisch</option>
+            </select></label></p>
+
+            <p><label>Favourite schortkleur: </label><input type="color" name="schortkleur"/></p>
+
+            <p><label>Biografie: <textarea name="Biografie"></textarea></label></p>
+
+            <p><label>Upload uw nieuwste recept </label><input type="file" name="Upload"/></p>
+
+            <p><label>Url naar recept website</label><input type="url" name="url"/></p>
+
+            <p><button type="reset">Reset</button></p>
+            <p><button type="submit">Verzenden</button></p>
+                  
+           
+        </form>
+    </body>
+</html>
